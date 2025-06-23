@@ -1,11 +1,78 @@
-/* 
+.todo-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black (0, 0, 0, 0.2);
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+  .task-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
 
-*/
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray (10, 10, 10);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition:  0.3s;
+  color: black;
+}
+
+
+.task-item:hover {
+  background-color: gray;
+}
+
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+ 
+  .task-item:hover .delete-button {
+    opacity: 1;
+  }
+  
+  
+  .no-tasks {
+    text-align: center;
+    color: black (139, 58, 58);
+    font-style: italic;
+    font-size: 14px;
+  }
+  
