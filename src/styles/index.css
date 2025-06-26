@@ -1,78 +1,22 @@
-.todo-container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px black (0, 0, 0, 0.2);
-    background-color: lightgray;
-    font-family: Arial, sans-serif;
-  }
-  
-  .title {
-    text-align: center;
-    color: black;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-
-  .task-input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+ul li{
+  border: 1px solid grey;
+  list-style:none;
+  padding:5px
 }
-
-
-.task-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+body{
+  margin-top:100px;
 }
-
-
-.task-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: darkgray (10, 10, 10);
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  transition:  0.3s;
-  color: black;
+h1{
+  text-align: center;
 }
-
-
-.task-item:hover {
-  background-color: gray;
+input {
+  border:none;
+  width:100%;
 }
-
-
-.delete-button {
-    background-color: transparent;
-    border: none;
-    color: red;
-    font-size: 16px;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
+ul{
+  padding:0px;
   
- 
-  .task-item:hover .delete-button {
-    opacity: 1;
-  }
-  
-  
-  .no-tasks {
-    text-align: center;
-    color: black (139, 58, 58);
-    font-style: italic;
-    font-size: 14px;
-  }
-  
+}
+i{
+  float: right;
+}
